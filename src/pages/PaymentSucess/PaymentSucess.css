@@ -1,0 +1,190 @@
+/* ===========================
+   GLOBAL WRAPPER
+=========================== */
+.success-wrapper {
+  text-align: center;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   ORDER BOX LAYOUT
+=========================== */
+.order-box {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* ===========================
+   STATUS SECTION
+=========================== */
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.status-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+.green { background: #00c853; }
+.red { background: #ff1744; }
+.yellow { background: #ffea00; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+.status-text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ===========================
+   ORDER SUMMARY
+=========================== */
+.items-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f8f8f8;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e1e1e1;
+}
+
+.item-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item-card p {
+  margin: 0;
+  font-size: 15px;
+}
+
+/* ===========================
+   TOTALS
+=========================== */
+.totals {
+  margin-top: 10px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 15px;
+  text-align: right;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 17px;
+  margin: 4px 0;
+}
+
+.total-row b {
+  font-size: 18px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.home-btn,
+.retry-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.home-btn {
+  background: #06C167;
+  color: #fff;
+}
+
+.home-btn:hover {
+  background: #05a655;
+}
+
+.retry-btn {
+  background: #ff1744;
+  color: white;
+}
+
+.retry-btn:hover {
+  background: #d31238;
+}
+
+
+@media (max-width: 768px) {
+  .order-box {
+    padding: 20px;
+  }
+
+  .item-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .total-row {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .item-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .item-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .total-row {
+    font-size: 15px;
+  }
+
+  .home-btn,
+  .retry-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
