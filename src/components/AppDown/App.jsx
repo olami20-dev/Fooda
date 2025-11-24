@@ -1,6 +1,6 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
-import './App.css'
+import './App/App.css'
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import './ExMenu.css'
+import './ExMenu/ExMenu.css'
 import {menu_list} from '../../assets/assets'
 const ExMenu = ({category, setCategory}) => {
   return (

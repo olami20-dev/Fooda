@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import "./PaymentPage.css";
+import "./PaymentPage/PaymentPage.css";
 
 export default function PaymentPage() {
   const navigate = useNavigate();

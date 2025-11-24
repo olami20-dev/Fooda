@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './LoginPage.css'
+import './LoginPage/LoginPage.css'
 import { assets } from '../../assets/assets';
 
 const LoginPage = ({setLogin}) => {

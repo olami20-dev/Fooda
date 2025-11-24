@@ -1,26 +1,26 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './PaymentSucess.css'
+import './PaymentSucess/PaymentSucess.css'
 
 export default function PaymentSuccess () {
   const [status, setStatus] = useState('processing')
   const [orderID] = useState(Math.floor(100000 + Math.random() * 900000))
 
-  // Get items and total from localStorage
+  
   const items = JSON.parse(localStorage.getItem('orderItems')) || []
   const subtotal = Number(localStorage.getItem('orderTotal')) || 0
   const delivery = subtotal === 0 ? 0 : 2
   const total = subtotal + delivery
 
-  // Handle status update
+  
   useEffect(() => {
-    // ❗ If no items, fail immediately
+   
     if (items.length === 0) {
       setStatus('failed')
-      return // stop here, no need to simulate payment
+      return 
     }
 
-    // Otherwise simulate payment
+  
     const timeout = setTimeout(() => {
       const random = Math.random()
 
