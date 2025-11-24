@@ -3,11 +3,12 @@ import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
-import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import LoginPage from './components/Loginpage/LoginPage'
 import PaymentPage from './pages/PaymentPage/PaymentPage'
-import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess'
+import PlaceOrder from './pages/PlaceOrder/PlaceOrder.jsx';
+import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess.jsx';
+
 
 const App = () => {
 
