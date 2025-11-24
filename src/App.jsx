@@ -7,7 +7,7 @@ import PlaceOrder from './pages/Placeorder/PlaceOrder'
 import Footer from './components/Footer/Footer'
 import LoginPage from './components/Loginpage/LoginPage'
 import PaymentPage from './pages/PaymentPage/PaymentPage'
-import PaymentSucess from './pages/PaymentSucess/PaymentSucess'
+import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess'
 
 const App = () => {
 
@@ -23,7 +23,7 @@ const App = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/payment-page' element={<PaymentPage />} />
-        <Route path='/payment-success' element={<PaymentSucess />} />
+        <Route path='/payment-success' element={<PaymentSuccess />} />
 
       </Routes>
     </div>

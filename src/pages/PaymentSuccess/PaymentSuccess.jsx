@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import './PaymentSucess/PaymentSucess.css'
+import './PaymentSuccess/PaymentSuccess.css'
 
 export default function PaymentSuccess () {
   const [status, setStatus] = useState('processing')
